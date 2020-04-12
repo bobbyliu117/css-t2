@@ -26,3 +26,54 @@ display: flex;
 `align-self` -> align cross axis
 
 `order` -> smaller comes first
+
+## Note
+
+### import font in css
+```css
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Shadow&display=swap');
+```
+
+### 页内跳
+```html
+<body id="home">
+<a href="#home">
+```
+
+### JQuery
+CDN
+```html
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+```
+```js
+$('header a, .btn').on('click', function(e){
+  if(this.hash !== '') {
+    event.preventDefault();
+    // hash is the id attribute
+    const hash = this.hash;
+    // html works w/o body
+    $('html, body').animate({
+      // scoll至hash.y - 100的位置(100大概是sticky navbar的高)
+      scrollTop: $(hash).offset().top -100
+    }, 600)
+  }
+});
+```
+
+### DOM Selector
+```js
+this.document.getElementBy..('class/id/tag/etc')
+this.document.querySelector('class/id/tag/etc')
+```
+
+### Get current window location
+```js
+window.scrollY
+```
+
+### Modify DOM CSS
+```js
+const dom = document.querySelector('header');
+// style is css
+dom.style.opacity = window.scrollY>100?0.8:1;
+```

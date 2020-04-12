@@ -1,0 +1,41 @@
+header {
+  top: -64px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: stretch;
+}
+header .logo {
+  height: var(--header-height);
+  align-self: center;
+}
+header ul {
+  height: var(--header-height);
+  justify-content: space-around;
+}
+header ul li {
+  margin: 0;
+  padding: 0.3rem 0.4rem;
+}
+
+#showcase {
+  max-height: 400px;
+}
+
+#service .container {
+  flex-direction: column;
+}
+
+#clients .container .box {
+  margin: 0.2rem;
+}
+
+#contact .container {
+  display: block;
+  overflow: hidden;
+}
+#map iframe {
+  min-height: 400px;
+}
+
+

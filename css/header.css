@@ -1,0 +1,51 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+header .overlay {
+  background-color: var(--c-blk);
+}
+
+header .logo {
+  height: 100%;
+  color: white;
+  line-height: var(--header-height);
+  display: flex;
+  font-size: 1.4rem;
+  z-index: 3;
+}
+
+header .logo img {
+  height: 100%;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+header ul li {
+  margin: 0 0.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+header ul li a {
+  color: white;
+}
+
+header ul li:hover {
+  background-color: var(--c-prime);
+}
+
+footer p {
+  text-align: center;
+  line-height: 1.5rem;
+}
