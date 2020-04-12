@@ -4,7 +4,7 @@ $('header a, .btn').on('click', function(e){
     event.preventDefault();
     const hash = this.hash;
     $('html, body').animate({
-      scrollTop: $(hash).offset().top -100
+      scrollTop: $(hash).offset().top -125
     }, 600)
   }
 });
