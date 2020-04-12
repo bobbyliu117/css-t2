@@ -22,6 +22,10 @@ header ul li {
   max-height: 400px;
 }
 
+#showcase .content h1 {
+  font-size: 1.5rem;
+}
+
 #service .container {
   flex-direction: column;
 }
